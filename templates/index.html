@@ -9,8 +9,8 @@
             <div class="row">
                 <div class="col">
                     <div class="home-banner-wrap">
-                        <h2>Best place for learning</h2>
-                        <p>Learn from any topic, choose from category</p>
+                        <h2>Nơi học tập tốt nhât</h2>
+                        <p>Học từ bất kỳ chủ đề, và bất kỳ thể loại</p>
                         <form class="" action="{% url 'udemy:search' %}" method="get">
                             <div class="input-group">
                                 <input type="text" class="form-control" name="q"
@@ -42,8 +42,8 @@
                     <div class="home-fact-box mr-md-auto ml-auto mr-auto">
                         <i class="fa fa-check float-left"></i>
                         <div class="text-box">
-                            <h4>Expert Instruction</h4>
-                            <p>Find The Right Course For You</p>
+                            <h4>Chỉ dẫn của chuyên gia</h4>
+                            <p>Tìm 1 khóa học phù hợp</p>
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                         <i class="fa fa-clock float-left"></i>
                         <div class="text-box">
                             <h4>Lifetime Access</h4>
-                            <p>Learn On Your Schedule</p>
+                            <p>Học trên lịch của bạn</p>
                         </div>
                     </div>
                 </div>
@@ -65,14 +65,14 @@
         <div class="container-lg">
             <div class="row">
                 <div class="col">
-                    <h2 class="course-carousel-title">Top Courses</h2>
+                    <h2 class="course-carousel-title">Top Khóa học</h2>
                     <div class="course-carousel">
                         {% for top_course in top_courses %}
 
                             <div class="course-box-wrap">
                                 <a href="{% url 'courses:course-details' top_course.slug %}" class="has-popover">
                                     <div class="course-box">
-                                        <div class="course-badge position best-seller">Best seller</div>
+                                        <div class="course-badge position best-seller">Khóa học bán chạy</div>
                                         <div class="course-image">
                                             <img style="height: 200px; width: 200px" src="{{ top_course.thumbnail.url }}" alt="" class="img-fluid">
                                         </div>
